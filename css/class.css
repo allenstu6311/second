@@ -1,0 +1,558 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.class-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.class{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.class-pic{}
+.class-pic img{
+    width: 100%;
+}
+.class-txt{
+    display: flex;
+}
+.txt-introduce{
+    display: flex;
+    flex-direction: column;
+}
+.txt-name{
+    text-align: center;
+    font-size: 14px;
+}
+
+.txt-name h3{}
+.txt-name h2{}
+.txt-information{
+    width: 100%;
+    font-size: 12px;
+    line-height: 2;
+}
+.txt-motto{
+    width: 100%;
+   
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+.motto-first{
+  width: 40px;
+}
+.motto-sec{
+    width: 40px;
+}
+/* ============================老師介紹 */
+.bread-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.bread{
+    padding-bottom: 100px;
+}
+.pic-left-large img{
+    width: 100%;
+}
+.pic-left-little{
+    display: flex;
+    justify-content: center;
+   
+}
+.pic-left-little img{
+    width: 47%;
+    margin: 10px;
+}
+.pic-right-large img{
+    width: 100%;
+}
+.pic-right-little{
+    display: flex;
+    justify-content: center;
+   
+}
+.pic-right-little img{
+    width: 47%;
+    margin: 10px;
+}
+/* =================================麵包 */
+.student-total{
+    width: 100%;
+    max-width: 365px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.student-title{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0'
+
+}
+#student{
+    display: flex;
+    position: relative;
+}
+.student-card{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(175, 175, 175);
+}
+.student-pic img{
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.student-txt{
+    padding: 10px;
+}
+.sale{
+    display: flex;
+    justify-content: flex-end;
+}
+.sale span:nth-child(1){
+    background-color: orange;
+    color: aliceblue;
+}
+.sale span{
+    border:1px solid orange;
+    padding: 1px 10px;
+    font-weight: 700;
+    font-size: 14px;  
+}
+.price{
+    color: red;
+    font-size: 20px;
+}
+/* .student-control{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+} */
+#left{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    border-left:30px solid red;
+    border-bottom: 30px solid transparent;
+    transform: rotate(-45deg);
+    
+}
+#right{
+    right: 10px;
+    top: 50%;
+    position: absolute;
+    border-right:30px solid red;
+    border-bottom: 30px solid transparent; 
+    transform: rotate(45deg);
+}
+/* ================================課程 */
+body{
+    height: 100vh;
+    position: relative;
+    padding: 10px;   
+}
+.message-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.massage-header-photo{
+    width: 100%;
+}
+.massage-header-photo img{
+    width: 100%;
+    object-fit: cover;
+}
+.message-title{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.message{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow-y: scroll;
+    height: 50vh;
+    
+}
+.message-title h1{
+    font-size: 35px;
+}
+#message-list{
+    display: flex;
+    flex-direction: column;
+}
+#message-list-pic{
+    padding: 0 10px;
+ 
+}
+#message-list-pic img{
+    border-radius: 50%;
+}
+#list-post{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-weight: 800;
+  
+    padding: 10px 0;
+}
+.message-write{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    line-height: 3;
+    position:static;
+    bottom:0px;
+    padding: 10px;
+}
+#text{
+    width: 80%;
+    border-radius: 5px;
+}
+#message-btn{
+    width: 100px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    font-weight: 800;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 50px;
+    border: red;
+}
+@media screen and (min-width:768px) {
+  
+    .message-title h1{
+       
+    }
+ 
+    #message-list-pic{
+        padding: 0 10px;
+     
+    }
+    #message-list-pic img{
+        border-radius: 50%;
+    }
+    #list-post{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: 800;
+       
+        padding: 10px 0;
+    }
+    .message-write{
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        line-height: 3;
+        position: static;
+        /* bottom:-300px; */
+    }
+    #text{
+        width: 80%;
+        border-radius: 5px;
+    }
+    #message-btn{
+        width: 100px;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 800;
+        background-color: red;
+        color: aliceblue;
+        border-radius: 50px;
+        border: red;
+    }
+}
+/* ==============================768 */
+@media screen and (min-width:1024px) {
+    .message-title{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .message-title h1{
+       
+    }
+ 
+    #message-list-pic{
+        padding: 0 10px;
+     
+    }
+    #message-list-pic img{
+        border-radius: 50%;
+    }
+    #list-post{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: 800;
+
+        padding: 10px 0;
+    }
+    .message-write{
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        line-height: 3;
+        position: static;
+        /* bottom:-300px; */
+    }
+    #text{
+        width: 80%;
+        border-radius: 5px;
+    }
+    #message-btn{
+        width: 100px;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 800;
+        background-color: red;
+        color: aliceblue;
+        border-radius: 50px;
+        border: red;
+    }
+}
+/* ================================1024 */
+@media screen and (min-width:1200px) {
+    
+.class-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.class{
+    padding: 20px;
+    margin-bottom: 100px;
+}
+.class-pic{
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+.class-pic img{
+    width: 100%;
+}
+.class-txt{
+    padding-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.txt-introduce{
+    display: flex;
+    flex-direction: column;
+}
+.txt-name{
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.txt-information{
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+.txt-motto{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 33px;
+    line-height: 1.5;
+}
+.motto-first{
+  width: 40px;
+  margin: 5px;
+}
+.motto-sec{
+    width: 40px;
+    margin: 5px;
+}
+/* ============================老師介紹 */
+.bread-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.bread{
+    padding-bottom: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.bread-pic-left{
+    margin: 10px;
+}
+.pic-left-large img{
+    width: 100%;
+}
+.pic-left-little{
+    display: flex;
+    justify-content: space-between;
+  
+   
+}
+.pic-left-little img{
+    width: 49.5%;
+    margin: 0px
+
+}
+.bread-pic-right{
+    margin: 10px;
+}
+.pic-right-large img{
+    width: 100%;
+}
+.pic-right-little{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  
+   
+}
+.pic-right-little img{
+    width: 49.5%;
+    margin: 0px
+
+}
+
+/* =================================麵包 */
+.student-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+#student{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    position: relative;
+    left: 0;
+
+}
+.student-card{
+    width: 100%;
+    max-width: 260px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(175, 175, 175);
+}
+.student-pic img{
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.student-txt{
+    padding: 10px;
+}
+.sale{
+    display: flex;
+    justify-content: flex-end;
+}
+.sale span:nth-child(1){
+    background-color: orange;
+    color: aliceblue;
+}
+.sale span{
+    border:1px solid orange;
+    padding: 1px 10px;
+    font-weight: 700;
+    font-size: 14px;  
+}
+.price{
+    color: red;
+    font-size: 20px;
+}
+.student-control{
+    display: none;
+}
+    /* ============================留言區 */
+    .message-total{
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+    .message-title h1{
+    }
+    #message-list-pic{
+        padding: 0 10px;
+    }
+    #message-list-pic img{
+        border-radius: 50%;
+    }
+    #list-post{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-weight: 800;
+        padding: 10px 0;
+    }
+
+    .message-write{
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        line-height: 3;
+        position: static;
+        /* bottom:-300px; */
+    }
+    #text{
+        width: 80%;
+        border-radius: 5px;
+    }
+    #message-btn{
+        width: 100px;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-weight: 800;
+        background-color: red;
+        color: aliceblue;
+        border-radius: 50px;
+        border: red;
+    }
+}
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 300px;
+         
+            position: relative;
+            border: 1px solid black;
+            
+        }
+        .name{
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .quantity{
+           display: flex;
+           justify-content: center;
+            
+          
+        }
+        .money{
+            text-align: center;
+        }
+        .box{
+       
+        }
+        #container{
+            display: flex;
+            margin-bottom: 100px;
+        }
+        .calculate-open{
+            /* display: flex; */
+        }
+        
+    </style>
+</head>
+<body>  
+    <div class="calculate-open">
+        <button  id="calculate-btn">開始計算</button>
+        <button id="clear">欄位清空</button>
+    </div> 
+       
+        <div id="container">
+
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                </div>
+                <div class="name">
+                    <h2>黑森林蛋糕</h2>
+                </div>
+                <div class="money">
+                    <p>$2000</p>
+                </div>
+                <div class="quantity">
+                    <button class="reduce">-</button>
+                    <input type="text" value="0" class="number">
+                    <button class="add">+</button>
+                </div>
+                <div class="delete">
+                    <button id="delete">移除</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                </div>
+                <div class="name">
+                    <h2>草莓蛋糕</h2>
+                </div>
+                <div class="money">
+                    <p>$2000</p>
+                </div>
+                <div class="quantity">
+                    <button class="reduce">-</button>
+                    <input type="text" value="0" class="number">
+                    <button class="add">+</button>
+                </div>
+                <div class="delete">
+                    <button id="delete">移除</button>
+                </div>
+            </div>
+          
+        </div>
+
+
+        <div class="box">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                </div>
+                <div class="name">
+                    <h2>香蕉蛋糕</h2>
+                </div>
+                <div class="money">
+                    <p>$2000</p>
+                </div>
+                <div class="quantity">
+                    <button class="reduce">-</button>
+                    <input type="text" value="0" class="number">
+                    <button class="add">+</button>
+                </div>
+                <div class="new">
+                    <button class="new-btn">新增至購物車</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <script>
+            let item = document.getElementsByClassName("item")
+            let name = document.getElementsByClassName("name")
+            let quantity = document.getElementsByClassName("quantity")
+            let add = document.getElementsByClassName("add")
+            let reduce = document.getElementsByClassName("reduce")
+            let number = document.getElementsByClassName("number")
+            let newBtn = document.getElementById("new-btn")
+
+            //商品數量
+
+            for(let i=0;i<add.length;i++){
+          
+                add[i].onclick=function(){
+         
+                    number[i].value = parseInt(number[i].value)+1
+                }
+
+                reduce[i].onclick = function(){
+                    if(number[i].value>0){
+                        number[i].value=parseInt(number[i].value)-1
+                    }
+                 
+                }
+            }
+
+            //新增至購物車
+            newBtn.addEventListener(".click",function(me){
+                var container = document.getElementById("container");
+                var item = me.parentNode
+                var h2 = document.getElementsByTagName("h2")
+                var name = h2[0].innerText;
+
+                var col = container.querySelectorAll("div:nth-child(2)")
+                var found = null;
+                for(let i=0;i<col.length;i++){
+                    if(col[i].innerText==name){
+                        found=col[i]
+                        break;
+                    }
+                }
+            })
+            
+
+
+        </script>
+    
+</body>
+</html>

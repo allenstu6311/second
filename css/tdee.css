@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.tdee{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: flex-start;
+}
+.tdee-pic{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.tdee-pic img{
+    width: 100%;
+}
+/* ======================================封面 */
+.tdee-calculate{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 50px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(196, 196, 196);
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.tdee-calculate-title{
+    text-align: center;
+}
+.tdee-food-title-pic{
+    width: 100%;
+    max-width: 300px;
+    margin-top: 30px;
+    
+}
+.tdee-food-title-pic img{
+    width: 100%;
+}
+.tdee-calculate div{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.tdee-calculate input{
+    padding: 5px;
+}
+.tdee-calculate select{
+    padding: 5px;
+}
+#calculate-open{
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+}
+#calculate-btn{
+
+    margin: 5px 0;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+}
+#clear{
+    background-color: brown;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+}
+.tdee-calculate-center{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    margin: 10px 0;
+}
+#tdee-calculate-end{
+    width: 200px;
+    height: 30px;
+    background-color:white;
+}
+/* ======================================計算機 */
+.tdee-food{
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    margin:auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tdee-food-title{
+   
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+   
+}
+.tdee-food-container{
+    width: 100%;
+    max-width: 1200px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.tdee-food-title-pic{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+}
+.food-card{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(173, 173, 173);
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+.food-card-pic{
+    width: 50%;
+}
+.food-card-pic img{
+    width: 100%;
+}
+.food-card-txt{
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.food-buy{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.food-buy a{
+    display: block;
+    text-decoration: none;
+    background-color: red;
+    color: aliceblue;
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+/* =======================================蛋糕清單 */
+.tdee-introduce-total{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;   
+}
+.tdee-introduce{
+    padding-bottom: 100px;
+}
+.tdee-title{
+    display: flex;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+}
+.tdee-topic li{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 1px solid black;
+}
+strong{
+    display:inline-block;
+    width: 30px;
+    font-size: 30px;
+}
+.tdee-topic p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* =================================== */
+@media screen and (min-width:1024px) {
+  
+}
+@media screen and (max-width:768px) {
+    .tdee{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display:grid;
+    }
+    .tdee-pic{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .tdee-pic img{
+        width: 100%;
+    }
+    /* ======================================封面 */
+    .tdee-calculate{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+        text-align: left;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tdee-calculate-title{
+        text-align: center;
+    }
+    .tdee-calculate div{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .tdee-calculate input{
+        padding: 5px;
+    }
+    .tdee-calculate select{
+        padding: 5px;
+    }
+    .calculate-open{
+        width: 100%;
+        max-width: 150px;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        margin: auto;
+        display: flex;
+    }
+    #calculate-btn{
+        background-color: red;
+        color: aliceblue;
+        border: none;
+        padding: 10px;
+        display: inline;
+    }
+    #clear{
+        background-color: brown;
+        color: aliceblue;
+        border: none;
+        padding: 10px;
+    }
+    .tdee-calculate-center{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        margin: 10px 0;
+    }
+    #tdee-calculate-end{
+        width: 200px;
+        height: 30px;
+        background-color:white;
+    }
+    /* ======================================計算機 */
+    .tdee-food{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .tdee-food-title{
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    .tdee-food-title-pic{
+        padding-top: 100px;
+        width: 300px;
+    }
+
+    .tdee-food-title-pic img{
+        width: 100%;
+    }
+    .tdee-food-pic img{
+        width: 100%;
+    }
+}
+

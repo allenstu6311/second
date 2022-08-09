@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.footer-total{
+    background-color: antiquewhite;
+}
+.footer{
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center; 
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    padding: 50px 0;
+}
+.link-pic{
+    width: 100%;
+    max-width: 200px;
+    padding: 20px 30px;
+}
+.link-pic img{
+    width: 100%;
+}
+.link-nav a{
+    color: brown;
+    text-decoration: none;
+   
+    padding: 10px 0;
+    line-height: 2;
+    font-size: 20px;
+}
+.contact-list{
+    margin: 20px 0;
+    
+}
+.contact-list p{
+    color: brown;
+    list-style: 3;
+    font-size: 20px;
+}
+.footer-app{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+   
+}
+.app-pic{
+    display: flex;
+    width: 100%;
+    width: 30px;
+}
+.app-pic img{
+    width: 100%;
+    margin: 0 10px;
+}
+.footer-subscription h4{
+    font-size: 22px;
+    color: aliceblue;
+    margin-bottom: 20px;
+    color: brown;
+}
+.footer-subscription form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: brown;
+}
+#subscription-int,
+#subscription-btn{
+    border: none;
+    padding: 5px 10px;
+}
+.footer-btn{
+    border: none;
+    background-color: white;
+    padding:0 5px;
+    color: rgba(143, 142, 142, 0.543);
+}
+#subscription-int{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+#subscription-btn{
+    background-color: red;
+    color: aliceblue;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.footer-copy{
+    border-top: 1px solid brown;
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 30px 0;
+}
+.footer-trademark img{
+    width: 100%;
+}
+.footer-copy p{
+    padding: 20px;
+    color: brown;
+}
+@media screen and (min-width:1024px) {
+
+}
+@media screen and (min-width:1200px) {
+    .footer{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-pic{
+      padding:0 20px;
+    }
+    .link-pic img{
+        width: 100%;
+    }
+    .app-pic{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        width: 30px;
+    }
+}

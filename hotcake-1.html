@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hotcake.css">
+</head>
+<body>
+
+    <div id="list">
+        <!-- <div class="hot-cake-title">
+            <h1>商品一覽</h1>
+        </div>
+          <div class="search">
+        <form action=""> 
+            <input type="text" id="int" size="25" placeholder="搜尋喜歡的蛋糕吧">
+            <input type="button" id="searchBtn" value="搜尋">   
+        </form>
+        <div class="search-chose">
+            <p>關鍵字搜尋:</p>
+            <span onclick="chose(this)">生乳</span>
+            <span onclick="chose(this)">芒果</span>
+            <span onclick="chose(this)">靜岡</span>
+        </div>
+    </div> -->
+        <div class="hot-cake-row">
+          
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>鮮芋奶霜生乳捲</span>
+                    </div>
+                   
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200014/%E9%AE%AE%E8%8A%8B-02.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>靜岡抹茶歐蕾生乳捲</span>
+                    </div>
+                   
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                  
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/0101139/1.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>北海道黑酷曲</span>
+                    </div>
+                   
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div> 
+                  
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200108/1.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>嫩布丁生乳捲</span>
+                    </div>
+                  
+                    <div class="cake-price">
+                        <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                  
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200033/01.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>特黑巧克力生乳捲</span>
+                    </div>
+                
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200002/1.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>特黑巧克力生乳捲
+                        </span>
+                    </div>
+                 
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/2013020/%E8%8A%92%E6%9E%9C%E5%AF%8C%E8%B1%AA.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>芒果夏洛特</span>
+                    </div>
+                  
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/2013016/%E8%8A%92%E6%9E%9C%E5%A4%8F%E6%B4%9B%E7%89%B92022.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>盛夏果園</span>
+                    </div>
+                
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/2013011/%E7%9B%9B%E5%A4%8F%E6%9E%9C%E5%9C%9202.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>虎你心願</span>
+                    </div>
+                 
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/0201087/%E8%99%8E%E4%BD%A0%E5%BF%83%E9%A1%98.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>翹鬍子偶爸爸</span>
+                    </div>
+                   
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/2013021/%E4%BF%8F%E9%AC%8D%E5%AD%90%E5%81%B6%E7%88%B8%E7%88%B82022.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>微醺香橘</span>
+                    </div>
+                 
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/2013001/%E5%BE%AE%E9%86%BA%E9%A6%99%E6%A9%98.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>雙捲禮盒</span>
+                    </div>
+                 
+                    <div class="cake-price">
+                          <sapn>$</sapn><span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200017/R%E9%9B%99%E6%8D%B2%E5%8E%9F%E5%91%B3%E9%AE%AE%E8%8A%8B%E7%9B%92%E5%AD%90.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tdee.css">
+</head>
+<body>
+
+    <section class="tdee-total">
+        <div class="tdee-pic">
+            <img src="https://palette-cakefactory.com/assets/img/contact/page_hero.png" alt="">
+        </div>
+        <div class="tdee">
+           
+            <div class="tdee-calculate">
+                <div class="tdee-calculate-title">
+                    <h1>TDEE計算機</h1>
+                </div>
+                <form action="">
+                    <div>
+                        <label for="gender">
+                            性別:
+                        </label>
+                        <select name="" id="gender">
+                            <option value="chose">請選擇</option>
+                            <option value="man">男</option>
+                            <option value="woman">女</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="activity">活動頻率:</label>
+                        <select name="" id="activity">
+                            <option value="">請選擇</option>
+                            <option value="0">幾乎不動</option>
+                            <option value="1">
+                                1-3次活動
+                            </option>
+                            <option value="2">3-5次活動</option>
+                            <option value="3">
+                                每天都運動
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="height">身高:</label>
+                        <input type="number" id="height">
+                    </div>
+                    <div>
+                        <label for="weight">體重:</label>
+                        <input type="number" id="weight">
+                    </div>
+                    <div>
+                        <label for="age">年齡:</label>
+                        <input type="number" id="age">
+                    </div>
+                    <div class="tdee-calculate-center">
+                 <input type="text" id="tdee-calculate-end">計算結果</input>
+                    </div>
+                </form>
+                <div id="calculate-open">
+                    <button  id="calculate-btn">開始計算</button>
+                    <button id="clear">欄位清空</button>
+                </div> 
+            </div>
+
+            <div class="tdee-food">
+            <div class="tdee-food-title">
+                <h2>計算TDEE找出適合你的蛋糕吧  </h2>
+                    <div class="tdee-food-title-pic">
+                        <img src="pic/商標01.png" alt="">    
+                    </div>
+            </div>
+                <div class="tdee-food-container">
+                    <div class="food-card level1">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201111/1%E5%8E%9F%E5%91%B3%E8%8A%9D%E5%A3%AB.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>原味芝士</h3>
+                            
+                            <small>熱量:321大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level1">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201109/1%E9%A0%82%E7%B4%9A%E6%B3%A2%E5%A3%AB%E9%A0%93.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>頂級波士頓</h3>
+                            
+                            <small>熱量:303大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level1">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/2012004/6-%E6%8B%BF%E7%A0%B4%E5%B4%99-%E5%B7%A7%E5%85%8B%E5%8A%9B.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>拿破崙-巧克力</h3>
+                            
+                            <small>熱量:350大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201112/1%E7%B4%90%E7%B4%84%E8%8A%9D%E5%A3%AB.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>紐約芝士</h3>
+                            
+                            <small>熱量:420大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201122/1%E9%9B%AA%E8%97%8F%E8%8D%89%E8%8E%93%E8%8A%9D%E5%A3%AB.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>雪藏草莓芝士</h3>
+                            
+                            <small>熱量:460大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201250/%E6%8A%B9%E8%8C%B6%E7%B4%85%E8%B1%86%E7%BE%8A%E7%BE%B9-2.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>抹茶紅豆羊羹派</h3>
+                            
+                            <small>熱量:470大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201251/%E8%8D%89%E8%8E%93%E9%9B%99%E8%B5%B7%E5%8F%B8.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>草莓雙起司</h3>
+                            
+                            <small>熱量:496大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/2012001/1-%E5%BE%AE%E9%86%BA%E9%A6%99%E6%A9%982.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>微醺香橘切片</h3>
+                            
+                            <small>熱量:440大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card levle2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201258/%E4%BB%B2%E5%A4%8F%E9%AE%AE%E8%8A%92-%E7%89%87.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>仲夏鮮芒派</h3>
+                            
+                            <small>熱量:503大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level2">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201108/1%E7%B4%AB%E8%8A%8B%E9%A6%99%E7%B7%B9.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>紫芋香緹</h3>
+                            
+                            <small>熱量:460大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level3">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/2012005/2-%E5%8C%97%E6%B5%B7%E9%81%93%E6%B3%A1%E8%8A%99-%E8%8A%92%E6%9E%9C.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>北海道泡芙蛋糕-芒果</h3>
+                            
+                            <small>熱量:620大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level3">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/2012002/S-%E8%8A%92%E6%9E%9C%E5%A1%94.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>芒果塔</h3>
+                            
+                            <small>熱量:650大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level3">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201105/1%E8%8D%89%E8%8E%93%E5%87%8D%E7%94%9F%E4%B9%B3%E6%8D%B2.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>草莓凍生乳捲</h3>
+                            
+                            <small>熱量:693大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level4">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201113/1%E7%83%A4%E5%B8%83%E8%95%BE.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>烤布蕾</h3>
+                            
+                            <small>熱量:703大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level4">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201131/11111.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>提拉米蘇派</h3>
+                            
+                            <small>熱量:707大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level4">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201149/1.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>黑森林蛋糕</h3>
+                            
+                            <small>熱量:681大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level4">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201129/3-1.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>25度N檸檬派</h3>
+                            
+                            <small>熱量:673大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level5">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201115/1%E6%89%8B%E5%B7%A5%E6%B3%A1%E8%8A%99-%E5%8E%9F%E5%91%B3.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>手工泡芙-香草</h3>
+                            
+                            <small>熱量:722大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level5">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201117/1.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>北海道泡芙蛋糕-香草</h3>
+                            
+                            <small>熱量:777大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level5">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/0201087/%E8%99%8E%E4%BD%A0%E5%BF%83%E9%A1%98.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>虎你心願</h3>
+                            
+                            <small>熱量:810大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-card level5">
+                        <div class="food-card-pic">
+                            <img src="https://photo.yannick.com.tw/photo/20201249/%E6%8A%B9%E8%8C%B6%E7%B4%85%E8%B1%86%E7%BE%8A%E7%BE%B9-1.jpg">
+                        </div>
+                        <div class="food-card-txt">
+                            <h3>抹茶紅豆羊羹派</h3>
+                            
+                            <small>熱量:810大卡</small>
+                            <div class="food-buy">
+                                <a href="">立即購買</a>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- =============================蛋糕清單 -->
+
+<div class="tdee-introduce-total">
+    <div class="tdee-introduce">
+        <div class="tdee-title">
+            <h2>TDEE常見問題</h2>
+        </div>
+        <ul class="tdee-topic">
+            <li><strong>+</strong>TDEE是什麼?</li>
+            <P>TDEE意思是身體為了要維持運作，在休息時消耗掉的熱量。基礎代謝率佔了總熱量消耗的一大部分，大約65-75%左右。</P>
+
+            <li><strong>+</strong>為甚麼要測量TDEE?</li>
+            <P>因為能計算出你的基礎代謝避免熱量過高導致肥胖</P>
+
+            <li><strong>+</strong>TDEE計算方式</li>
+            <P>總熱量消耗 = 基礎代謝＋運動消耗＋產熱消耗</P>
+
+            <li><strong>+</strong>BMR與基礎代謝率差異</li>
+            <p>BMR只是單純利用身高及體重來判斷並沒有記參考活動量及年紀,誤差值較大
+            </p>
+
+            <li><strong>+</strong>為什麼以TDEE為標準更重要？</li>
+            <p>基礎代謝率是提醒我們攝入熱量的最低標準，但在減脂時，若只以達成基礎代謝率為目標，代表身體將處在僅維持生理機能的極限狀態。因此先試算出自己的TDEE，再根據達成目標體重的計畫，來決定攝取熱量的總量，才是更安全有效的做法。</p>
+
+            <li><strong>+</strong>吃蛋糕之前一定都要測嗎?</li>
+            <P>不一定喔!這個只是方便你計算熱量的功能而已，避免妳因為甜食的熱量而讓體重上升</P>
+
+            <li><strong>+</strong>我算出來跑出好多蛋糕所以我可以盡量吃?</li>
+            <P>雖然說比較不用擔心變胖的問題，但是還是建議要控制份量喔~</P>
+        </ul>
+    </div>
+    
+</div>
+
+
+
+
+    
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/tdee.js"></script>
+
+    <!-- <div class="tdee-food-pic">
+        <table border="1">
+            <tr>
+                <th>圖片</th>
+                <th>名稱</th>
+                <th>熱量</th>
+                <th>危險等級</th>
+            </tr>
+            <tr>
+                <th><img src="https://photo.yannick.com.tw/photo/2011007/%E7%84%A6%E6%B5%B7.jpg" alt=""></th>
+                <th>焦糖鹽之花生乳捲</th>
+                <th>600大卡</th>
+                <th>危險</th>
+            </tr>
+            <tr>
+                <th><img src="https://photo.yannick.com.tw/photo/20200002/1.jpg" alt=""></th>
+                <th>特黑巧克力生乳捲</th>
+                <th>300大卡</th>
+                <th>安全</th>
+            </tr>
+             <tr>
+                <th><img src="https://photo.yannick.com.tw/photo/2011008/az016.jpg" alt=""></th>
+                <th>雙捲禮盒-原味 <strong>+</strong>焦糖鹽之花</th>
+                <th>1200大卡</th>
+                <th>超危險</th>
+            </tr>
+            <tr>
+                <th><img src="https://photo.yannick.com.tw/photo/2012005/2-%E5%8C%97%E6%B5%B7%E9%81%93%E6%B3%A1%E8%8A%99-%E8%8A%92%E6%9E%9C.jpg" alt=""></th>
+                <th>北海道泡芙蛋糕-芒果</th>
+                <th>500大卡</th>
+                <th>安全</th>
+            </tr>
+            <tr>
+                <th><img src="https://photo.yannick.com.tw/photo/20201251/%E8%8D%89%E8%8E%93%E9%9B%99%E8%B5%B7%E5%8F%B8.jpg" alt=""></th>
+                <th>草莓雙起司</th>
+                <th>400大卡</th>
+                <th>安全</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </div> -->
+    
+</body>
+</html>

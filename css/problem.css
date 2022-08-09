@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.problem{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+#problem-search{
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.problem-list{
+    width: 100%;
+    margin:0  auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: white;
+ 
+}
+.list-nav-control{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: 25px;
+    border-bottom: 2px solid aliceblue;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+}
+.list-nav-control span{
+    font-size: 20px;
+    padding: 10px;
+
+}
+.list-nav li{
+    border-bottom: 2px solid black;
+    padding: 15px 10px;
+}
+.list-nav li  p{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.list-nav li a:first-child{
+    display: block;
+    margin-top: 20px;
+}
+.show-item{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.problem-show{
+    margin-top: 0px;
+}
+.show-title{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.show-title h3{
+}
+.show-item li{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+.show-nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.answer{
+    display: flex;
+    justify-content: space-around;
+}
+.answer p{
+    font-weight: 700;
+}
+.answerall{
+    border: none;
+}
+.list-nav ul {
+    display: none;
+}
+@media screen and (min-width:1024px) {
+    .problem-total{
+        margin-top: 130px;
+    }
+    .list-title{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 0;
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .problem{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #problem-search{
+        padding: 10px 0;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    .problem-list{
+        width: 100%;
+        max-width: 350px;
+        margin:0  auto;
+        text-align: center;
+        box-shadow: 0 0 10px rgb(174, 173, 173);
+    }
+    .list-nav-control{
+        display: flex;
+        justify-content: space-around;
+        font-weight: 800;
+        font-size: 25px;
+        border-bottom: 2px solid black;
+    }
+    .list-nav-control span{
+        font-size: 30px;
+    }
+    .list-nav li{
+        border-bottom: 2px solid black;
+        padding: 15px 10px;
+    }
+    .list-nav li  a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
+    .list-nav li a:first-child{
+        display: block;
+        margin-top: 20px;
+    }
+    .show-item{
+        width: 100%;
+        min-width: 600px;
+        text-align: center;
+        box-shadow: 0 0 10px rgb(174, 173, 173);
+    }
+    .rotate{
+        transform: rotate(45deg);
+    }
+    .problem-show{
+        margin-top: 0px;
+    }
+    .show-title{
+        font-size: 30px;
+        font-weight: 900;
+        margin: 0px 0;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .show-title h3{
+        border-bottom: 2px solid black;
+    }
+    .show-item li{
+        width: 100%;
+        min-width: 600px;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 30px 0;
+        border-bottom: 1px solid black;
+    }
+   
+    .show-nav{
+        width: 100%;
+        min-width: 600px;
+      
+    }
+    .answerall{
+        border: none;
+        max-width: 600px;
+    }
+    .list-nav ul {
+        display: block;
+    }
+}

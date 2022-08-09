@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hotcake.css">
+</head>
+<body>
+    
+      <!-- 商品列表 -->
+      <div id="list">
+        <div class="hot-cake-title">
+            <h1>購物區</h1>
+        </div>
+        <div class="hot-cake-row">
+          
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>抹茶蕨餅生乳捲</span>
+                    </div>
+                    <p>奢侈地使用天皇杯受賞的靜岡抹茶粉與北海道奶霜的細膩，入口盡是濃厚的抹茶滋味，搭配滑溜爽口的日式蕨餅，形成獨特的絕妙口感。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200024/111.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>黑芝麻焦糖雙享派</span>
+                    </div>
+                    <p>最適合秋季嚐鮮的新品，竹炭派塔與芝麻的完美結合，每口都能嚐到都濃而不膩的芝麻奶香，搭配法國鮮奶油，營造最高層次的絕妙口感，帶給味蕾極致享受。
+                        【焦糖玫瑰鹽】
+                        焦糖奶霜、北海道奶霜、焦糖卡士達及巧克力酥菠蘿層層堆疊出豐富口感，充滿濃郁的焦糖牛奶糖風味，尾韻是頂級玫瑰鹽高雅的鹹味。。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                  
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/1402022/%E9%BB%91%E8%8A%9D%E9%BA%BB%E7%84%A6%E7%B3%96%E9%9B%99%E4%BA%AB%E6%B4%BE.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>阿爸的芋花園</span>
+                    </div>
+                    <p>香脆塔皮綻放著灰紫色花瓣是純芋泥融入北海道奶霜的原色，加上俏皮可愛的巧克力鬍子，討喜又逗趣！
+                        搭配帶有顆粒的芋泥餡、奶霜與泡芙蛋糕，呈現自然的芋頭奶香。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div> 
+                  
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/1402015/D-%E8%8A%8B%E8%8A%B1%E5%9C%92.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>25度N檸檬派</span>
+                    </div>
+                    <p>嚴選屏東九如直輸綠檸檬，新鮮現榨綠檸檬奶油餡，搭配細膩軟綿的炙燒檸檬蛋白霜與酥脆派皮，清新迷人的酸與甜平衡著味蕾，口感絕佳！  </p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                  
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20201201/111.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>檸檬烤布丁雙享派</span>
+                    </div>
+                    <p>嚴選屏東九如直輸綠檸檬，新鮮現榨綠檸檬奶油餡，搭配細膩軟綿的炙燒檸檬蛋白霜與酥脆派皮，清新迷人的酸與甜平衡著味蕾，口感絕佳！</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20201213/%E6%AA%B8%E6%AA%AC%E6%B4%BE%E7%83%A4%E5%B8%83%E4%B8%81%E8%B5%B7%E5%8F%B82.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>芋花園焦糖雙享派</span>
+                    </div>
+                    <p>香酥塔皮上有著淡淡的紫色花瓣綻放，是純芋泥融入北海道奶霜的原色，口感輕盈。接著是香醇濃郁帶有顆粒的芋泥餡、奶霜與泡芙蛋糕，豐富的層次讓人一口接著一口。
+                        【焦糖玫瑰鹽】
+                        焦糖奶霜、北海道奶霜、焦糖卡士達及巧克力酥波蘿，一層層堆疊出豐富口感，充滿濃郁的焦糖牛奶糖風味，尾韻是頂級玫瑰鹽高雅的鹹味。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20201211/%E8%8A%8B%E8%8A%B1%E5%9C%92%E7%84%A6%E7%B3%96%E7%8E%AB%E7%91%B0%E9%B9%BD2.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>北海道黑酷曲</span>
+                    </div>
+                    <p>神秘黑蛋糕暗藏鬆軟的空氣感，充滿濃厚
+                        OREO 風味；融入北海道奶霜與特調卡士達，
+                        夢幻級乳香讓熟悉的味道更加精彩，點綴淋上巧克力的黑餅，一口之後欲罷不能。 </p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200519/10-1.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>雙層巴斯克生起司-微醺香橘</span>
+                    </div>
+                    <p>起司與香橙的百搭組合 ，選用以法國橙皮酒釀製的柑橘果乾，酸甜清爽的風味搭配經典北海道生起司，入口盡是濃郁柑橘果香與巴斯克獨特焦糖香氣，感受巴斯克新口味的魅力。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/2016002/1%20(2).jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>米蘭硬布丁5入禮盒</span>
+                    </div>
+                    <p>
+                        天使般純白布丁，使用頂級北海道生起司、天然香草籽與蛋白，以水浴法慢慢蒸烤，打造出綿密扎實的豐厚口感，入口即化，加上濃郁微苦的焦糖與滿滿的奶香味，嚐上一口，值得細細品嚐的極品。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200103/1.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+            <div class="hot-cake-col">
+                <div class="hot-cake-txt">
+                    <div class="cake-name">
+                        <span>起司磚-草莓</span>
+                    </div>
+                    <p>
+                        加入草莓果餡和澳洲奶油乳酪一起烘烤，獨特的果粒口感融入起司中，再搭配略帶鹹味的碎餅乾底，酸甜的厚實口感讓人齒頰留香、意猶未盡。</p>
+                    <div class="cake-price">
+                        <span>3000</span><span>元</span>
+                    </div>
+                   
+                   
+                </div>
+                <div class="hot-cake-pic">
+                <img src="https://photo.yannick.com.tw/photo/20200302/%E8%8D%89%E7%A3%9A-1.jpg">
+                </div>
+                <input type="button" value="新增至購物車" onclick="add(this)">
+            </div>
+        </div>
+          
+  
+   
+
+    <script src="javascript/jquery-3.6.0.min.js"></script> 
+        <script src="javascript/hotcake.js"></script>
+    
+
+</body>
+</html>
